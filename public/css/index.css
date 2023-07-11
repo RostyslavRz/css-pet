@@ -1,7 +1,50 @@
+:root {
+  background:purple;
+}
+
 html {
   max-width: 720px;
 }
 
 body {
   background: #fff;
+}
+
+* {
+  color:red;
+}
+
+h1 {
+  color:blue;
+}
+
+.box {
+  background:#a7a6a6;
+}
+
+#user,
+.user {
+  color: orangered;
+}
+
+h2,
+h3,
+h4 {
+  color:lightgreen;
+}
+
+div > p {
+  color:brown;
+}
+
+ footer > .user {  /* якщо клас user (дочірній) знаходиться у footer, то для нього */
+  color: green;  /* колір вже буде зелений, не оранжевий, як вище */
+}
+
+footer em {  /* якщо клас em ("вкладений у дочірній")знаходиться у footer, то  */
+ color: blue;  /* для нього колір вже буде синій, не зелений, як вище */
+}
+
+h1 + p {
+   background: peru;  /* приклад сестринського селектору */
 }
