@@ -1,4 +1,4 @@
-:root {
+/* :root {
   background:purple;
 }
 
@@ -38,13 +38,69 @@ div > p {
 }
 
  footer > .user {  /* якщо клас user (дочірній) знаходиться у footer, то для нього */
-  color: green;  /* колір вже буде зелений, не оранжевий, як вище */
-}
-
+   /* color:green;  /* колір вже буде зелений, не оранжевий, як вище */
+/* } */ 
+/* 
 footer em {  /* якщо клас em ("вкладений у дочірній")знаходиться у footer, то  */
- color: blue;  /* для нього колір вже буде синій, не зелений, як вище */
+ /* color: blue;  /* для нього колір вже буде синій, не зелений, як вище */
+/* } */ 
+
+/* h1 + p {
+   background: peru;  /* приклад сестринського селектору */
+/* } */
+/* ========================================================================== */
+
+.card-dark {
+  background:#ededed;
 }
 
-h1 + p {
-   background: peru;  /* приклад сестринського селектору */
+.item {
+  color:green;
+}
+
+.item:first-child {
+  color:blue;
+}
+
+.item:last-child {
+  color:orange;
+}
+
+.input-dark {
+  background:#979797;
+}
+
+.input-dark[required] {
+  background:#a84545;
+}
+
+.input-dark[type='number'] {
+  background:#0a9705;
+}
+
+.small-img[alt~='small'] {
+  height: 300px;
+}
+
+a[rel~="external"] {
+  color:brown;
+}
+
+button[class|='btn'] {
+  background: orange;
+}
+
+.btn::first-letter {
+  color: red;
+}
+
+.big-text::first-line {
+  color:peru;
+}
+
+.big-text::before,
+.big-text::after {
+  content:'$$$';
+  color: green;
+  background: yellow;
 }
